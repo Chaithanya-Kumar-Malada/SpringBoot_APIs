@@ -1,0 +1,142 @@
+#store {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#store-page {
+    text-align: center;
+    font-family: system-ui;
+}
+
+#btn {
+    margin-left: 280px;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    border: solid 1px;
+    color: orange;
+    border-radius: 5px;
+    background-color: white;
+}
+#btn-post{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    border: solid 1px;
+    color: orange;
+    border-radius: 5px;
+    background-color: white; 
+}
+#carts{
+    margin-left: 280px;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    border: solid 1px;
+    color: orange;
+    border-radius: 5px;
+    background-color: white;
+}
+#add-to-carts{
+    background-color: black;
+    color: wheat;    margin-left: 130px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+#search {
+    margin-left: 800px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 166px;
+    border-radius: 10px;
+    border: solid 1px darkgrey;
+}
+
+#root {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#sp {
+    color: orange;
+}
+
+#Products-sec {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 20px;
+}
+
+#Products-div {
+    
+    width: 265px;
+    height: 310px;
+    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+#Products-div2{
+    
+    width: 265px;
+    height: 310px;
+    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#numbers {
+    width: 50px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    text-align: inherit;
+    color: gray;
+}
+
+.category {
+    text-align: end;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 60px;
+    font-weight: 600;
+    color: orangered;
+}
+
+.images {
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+
+}
+
+.titles {
+    text-align: center;
+    font-size: 14px;
+    color: orangered;
+}
+
+.price {
+    margin-left: 80px;
+}
+
+.description {
+    font-size: 12px;
+    font-family: monospace;
+}
+
+.rating {
+    text-align: center;
+}

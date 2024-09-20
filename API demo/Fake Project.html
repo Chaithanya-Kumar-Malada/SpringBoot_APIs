@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="fake project.css">
+    <script src="script.js"></script>
+    <title>Fake API demo</title>
+</head>
+
+<body>
+
+    <h1 id="store"> Store</h1>
+    <p id="store-page">This is the Store page from API calling</p>
+    <button id="btn" onclick="button()"> Get products</button>
+    <button id="btn-post" onclick="btnpost()"> post a product</button>
+
+    <button id="carts" onclick="mycarts()">carts()</button>
+
+    <div id="cartsdiv" style="display: none;">
+
+        <p id="cartsp">hi</p>
+
+    </div>
+
+
+
+    <input id="search" type="search" value="Search">
+    <p id="root" style="display: none;"></p>
+    <p id="root1" style="display: none;"> </p>
+     
+    <p id="new"></p>
+
+  
+
+
+    <section id="Products-sec">
+    </section>
+
+<div id="demo">kjgjfjgk,hjkj</div>
+
+
+   <script>
+
+
+    fetch('https://fakestoreapi.com/products')
+
+            .then(res => res.json())
+
+            .then(data1 => {   
+                 console.log(data1[0]);
+
+                 document.getElementById('demo').innerHTML = data1[0].title;
+
+
+     })
+
+
+
+
+   </script>
+
+
+</body>
+
+</html>

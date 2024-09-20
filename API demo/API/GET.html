@@ -1,0 +1,337 @@
+<html>
+
+<head>
+
+    <title>GET API</title>
+</head>
+
+<body>
+
+    <h1 id="">GET API</h1>
+
+
+    <p id="demo"></p>
+
+
+
+    <script>
+
+
+        // var raw = {
+        // "userName":"arya222534643634",
+        // "email":"arya2@gmail.com",
+        // "mobileNo":"8106757877",
+        // "password":"arya@284432"
+
+        // };
+
+        // var requestOptions = {
+        //   method: "POST",
+        //   body:JSON.stringify(raw) ,
+        //   mode:'no-cors',
+        //   headers: {       
+        //                     "Content-type": "application/json",
+        //                     "Accept": "application/json" ,
+
+
+
+        //                  },
+
+        // };
+
+
+
+        //  fetch("http://13.50.223.218:8085/user/registretion", requestOptions ) 
+
+        //  .then(resp => resp)
+        //     .then(data => {  console.log(data)   })
+
+
+
+        // 
+
+
+
+
+
+
+        //     .catch((err) => { console.log(err); })
+
+
+        // var requestOptions = {
+        //   method: 'GET',
+        //   mode:"no-cors",
+        //   redirect: 'follow'
+        // };
+
+        // fetch("https://fakestoreapi.com/products", requestOptions)
+
+
+        //   .then(response => { response ; console.log(response) } )
+        //   .then(result => console.log(result ))
+
+
+
+
+
+
+
+
+        // get method succesfull
+
+
+//         fetch('http://13.50.223.218:8085/user/get/alluser',  {
+//         headers: {
+                
+//                 "Content-type": "application/json; charset=UTF-8" ,
+//                 "HTTP/1.1" : "200 OK"
+//     }
+// })
+//             .then((response) => {
+//                 return response.json() ;
+//             })
+//             .then((data) => { console.log(data); })
+
+
+
+
+ // Async and await get api calling 
+
+const url = "http://localhost:8080/users";
+
+let options = {};
+  
+async function api() {
+    
+    const response = await fetch(url );
+    console.log(response);
+    const data = await response.json();
+    console.log(data);
+}    
+
+ api();
+
+
+ fetch("http://localhost:8080/users" ) 
+ .then(resp => resp.json())
+ .then(data => {  console.log(data)   })
+
+
+
+            
+        // api url
+
+        // const api_url =
+
+        // "http://13.50.223.218:8085/user/get/alluser";
+
+
+
+        //         // Defining async function
+
+        //         async function getapi(url) {
+
+
+
+        //             // Storing response
+
+        //             const response = await fetch(url);
+
+        //             console.log(response);
+
+        //             // Storing data in form of JSON
+
+        //             var data = await response.json();
+
+        //             console.log(data);
+
+
+
+
+
+        //             show(data);
+
+        //         }
+
+        //         // Calling that async function
+
+        //         getapi(api_url);
+
+
+
+
+        // post method
+
+
+        // fetch('http://13.50.223.218:8085/user/registretion',{
+        //     method:"POST",
+
+        //     body:JSON.stringify(
+        //         {
+        //             "userName":"arya2",
+        //             "email":"arya2@gmail.com",
+        //             "mobileNo":"9740713986",
+        //             "password":"arya@28"
+
+        // }
+
+        //     ),
+
+        //     headers: {
+
+        //         "Content-Type" : "application/json"
+
+        //     }
+        // })
+
+
+
+        //     .then(res=> {  return res.text(); console.log(res)   })
+        //     .then(data => {  console.log(data)  })
+
+
+        // fetch('http://13.50.223.218:8085/user/get/alluser')
+        //      .then(res=>res.json())
+        //      .then(json=>console.log(json))
+
+
+
+
+        //post 
+
+
+        // fetch('http://13.50.223.218:8085/user/registretion', {
+        //     method: "POST",
+
+        //     body: JSON.stringify(
+        //         {
+        //             "userName": "arya2",
+        //             "email": "arya2@gmail.com",
+        //             "mobileNo": "8640713986",
+        //             "password": "aryaf@28"
+        //         }
+        //     ),
+
+        //     headers: {
+
+
+        //     }
+
+        // })
+
+       
+        //     .then(res => res.json())
+
+        //     .then(data => console.log(data))
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+<!-- 
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <form id="form" method="post">
+
+        <input type="text" , id="name" placeholder="Name" /></br>
+
+        <input type="text" , id="body" placeholder="Body" /></br>
+
+        <input type="submit" value="Add" />
+
+    </form>
+
+    <div>
+
+        <h3>The Following data is successfuly posted</h3>
+
+        <h4 id="title"></h4>
+
+        <h5 id="bd"></h5>
+
+    </div>
+
+</body>
+
+<script>
+
+    var form = document.getElementById('form')
+
+
+
+    form.addEventListener('submit', function (e) {
+
+        e.preventDefault()
+
+
+
+        var name = document.getElementById('name').value
+
+        var body = document.getElementById('body').value
+
+
+
+        fetch('http://13.50.223.218:8085/user/registretion', {
+
+            method: 'POST',
+
+            body: JSON.stringify({
+
+                userName: name,
+
+                email: body,
+
+
+
+            }),
+
+            headers: {
+
+                'Content-type': 'application/json; charset=UTF-8',
+
+            }
+
+        })
+
+            .then(function (response) {
+
+                return response.json()
+            })
+
+            .then(function (data) {
+                console.log(data)
+
+                title = document.getElementById("title")
+
+                body = document.getElementById("bd")
+
+                title.innerHTML = data.title
+
+                body.innerHTML = data.body
+
+            }).catch(error => console.error('Error:', error));
+
+    });
+
+</script>
+
+</html> -->

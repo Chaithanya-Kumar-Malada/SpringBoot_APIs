@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATCH API</title>
+</head>
+
+<body>
+
+
+
+    <h1>PATCH API.....</h1>
+
+
+
+
+    <script>
+
+
+
+        let options = {
+
+            method: "PATCH",
+            body: JSON.stringify({
+
+                "mobileNumber": "9740713686",
+                "password": "1237",
+                "conformPassword": "1237"
+            }),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }}
+
+        fetch('http://13.50.223.218:8091/user/resetpassword', options)
+
+            .then((response) => response.json())
+            .then(data => console.log(data));
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
